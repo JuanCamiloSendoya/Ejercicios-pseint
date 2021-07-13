@@ -1,0 +1,18 @@
+Algoritmo edad_persona
+	Definir edad,diasActual,mesActual,añoActual Como Entero
+	Definir diaNacimiento, mesNacimiento, añoNacimiento Como Entero
+	
+	Escribir "Sistemas para saber la edad de una persona";
+	Escribir " "
+	Escribir "Ingresa la fecha actual en día, mes y año";
+	Leer diasActual, mesActual,añoActual
+	Escribir "Ingresa la fecha de nacimiento en día, mes y año";
+	Leer diaNacimiento, mesNacimiento, añoNacimiento
+	
+	edad = añoActual - añoNacimiento
+	si mesNacimiento > mesActual Entonces
+		edad = edad - 1
+	FinSi
+	
+	Escribir "Escribir Tu edad actual es:", " " ,edad," ","años";
+FinAlgoritmo
